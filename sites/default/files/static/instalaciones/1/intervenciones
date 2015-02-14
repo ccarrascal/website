@@ -1,0 +1,627 @@
+[
+    {
+    "id":"1",
+    "nombre":"Mantenimiento mensual",
+    "descripcion":"Operaciones estandar del mantenimiento de la sala de calderas",
+    "prioridad" : "Normal",
+    "fechaAlta" : "10/09/2012",
+    "tipo" : "Mantenimiento", 
+    "listaContactos": [
+        {
+        "id" : "1",
+        "nombre" : "Daniel",
+        "apellidos" : "Doe",
+        "telefono" : "000 000 000",
+        "email" : "daniel@avisos.com"
+        }
+    ],
+    "instalacion" :
+      {"id":"1",
+  "nombre":"Av. Baviera 16",
+  "direccion":"Av. Baviera 16",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Manuel (conserje)",
+  "existenLlaves": true,
+  "existenLlavesObservaciones":"preguntar en recepción",
+  "descripcion":"Ut ante dolor, ullamcorper a venenatis id, aliquam sit amet magna. Quisque vel ante diam, rhoncus consequat orci. Nunc turpis nulla, pellentesque eu imperdiet non, porta quis nulla. Ut suscipit accumsan mauris et porta. Nam mattis volutpat viverra. Curabitur sollicitudin est ligula. Ut mi dolor, mollis pretium posuere quis, lobortis sagittis felis. Sed sollicitudin, sem nec feugiat sollicitudin, ligula urna vulputate orci, vitae mattis tortor odio vitae libero. Donec vel lorem eros, lacinia viverra nulla. Morbi eu bibendum massa. Aliquam aliquam cursus elit, a aliquam lectus imperdiet non. Aenean ut turpis turpis. ",
+  "observaciones":"UN INTERCAMBIADOR ANULADO",
+  "listaEquipos": [
+      {
+	"id" : 1,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 2,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 3,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "CUENOD",
+	"modelo" : "C22 61207/8",
+	"añoFabricacion" : "",
+	"medidas" : "240Kw",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 4,
+	"tipo" : "quemador",
+	"descripcion" : "",
+        "marca" : "CUENOD",
+          "modelo" : "C22 61207/8",
+          "añoFabricacion" : "",
+          "medidas" : "240Kw",
+          "referencia" : "",
+          "presion" : ""
+      },
+          {
+              "id" : 5,
+              "tipo" : "Bomba Calefacción",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP50112-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 6,
+              "tipo" : "Bomba Calefacción",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP50112-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 7,
+              "tipo" : "Bomba Primario",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP 40/10-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 8,
+              "tipo" : "Bomba Primario",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP 40/10-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 9,
+              "tipo" : "Bomba retorno",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SAP 25/8T",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 10,
+              "tipo" : "Bomba recirculación",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP32-6B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 11,
+              "tipo" : "Bomba recirculación",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP32-6B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 12,
+              "tipo" : "Centralita regulación",
+              "descripcion" : "",
+              "marca" : "HONEYWELL",
+              "modelo" : "MCK100",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 13,
+              "tipo" : "Centralita gas",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "SFTK",
+              "añoFabricacion" : "03/01/2012",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 14,
+              "tipo" : "Ventilador",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "K-600",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 15,
+              "tipo" : "Extractor",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 16,
+              "tipo" : "Llenado automático",
+              "descripcion" : "",
+              "marca" : "SPIROVENT",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 17,
+              "tipo" : "Valvula Seguridad",
+              "descripcion" : "",
+              "marca" : "1 1/2 X CALDERA",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : "4bar"
+          },
+          {
+              "id" : 18,
+              "tipo" : "Vaso expansión",
+              "descripcion" : "",
+              "marca" : "ZELMET",
+              "modelo" : "80L (2)",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 18,
+              "tipo" : "Vaso expansión",
+              "descripcion" : "",
+              "marca" : "IBAIONDO",
+              "modelo" : "500AMR",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 19,
+              "tipo" : "Caja control",
+              "descripcion" : "",
+              "marca" : "LANDIS",
+              "modelo" : "LGB22230B27",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          }
+          ],
+          "listaFotos" : [
+          
+          ], 
+          "listaTecnicos": [
+          {
+              "id" : "1",
+              "nombre" : "Daniel",
+              "apellidos" : "Doe",
+              "telefono" : "000 000 000",
+              "email" : "daniel@termainser.com"
+          }
+          ]
+      }
+
+
+
+    ,
+    "listaEquiposTareas" : [
+        {
+            "id" : 1,
+            "tipo" : "caldera",
+            "descripcion" : "",
+            "marca" : "WOLF",
+            "modelo" : "MK1-220",
+            "añoFabricacion" : "",
+            "medidas" : "220Kw",
+            "referencia" : "",
+            "presion" : "4bar",
+            "listaTareas" : [
+                {
+                    "id" : "1",
+                    "nombre" : "Control de condiciones de combustión y rendimiento de la caldera", 
+                    "valor" : "0",
+                    "realizada": "si"
+                    , "fecharealizada": "12-09-2012"
+                },
+                {
+                    "id" : "2",
+                    "nombre" : "Contraste y ajuste de los presostatos de mando y seguridad", 
+                    "tipoValor" : "texto",
+                    "valor" : "0",
+                    "realizada": "no"
+                    , "fecharealizada": ""
+                },
+                {
+                    "id" : "2",
+                    "nombre" : "Limpieza y verificación célula fotoeléctrica", 
+                    "tipoValor" : "texto",
+                    "valor" : "0",
+                    "realizada": "no"
+                    , "fecharealizada": ""
+                }
+
+            ]
+        },
+        {
+            "id" : 3,
+            "tipo" : "quemador",
+            "descripcion" : "",
+            "marca" : "CUENOD",
+            "modelo" : "C22 61207/8",
+            "añoFabricacion" : "",
+            "medidas" : "240Kw",
+            "referencia" : "",
+            "presion" : ""
+            , "listaTareas" : [
+                {
+                    "id" : "1",
+                    "nombre" : "Comprobación y tarado de válvulas de seguridad", 
+                    "valor" : "false",
+                    "realizada": "no"
+                    , "fecharealizada": ""
+                }
+            ]
+        }
+    ]
+
+    },
+    {
+    "id":"2",
+    "nombre":"Aviso 2: Morbi imperdiet nisl libero, at condimentum eros. ",
+    "descripcion":"Curabitur ornare tincidunt libero, quis aliquam eros auctor sit amet. Suspendisse sollicitudin, magna ut ornare tristique, lacus nisi venenatis nisi, nec sagittis sapien quam ut nisi. Sed fringilla cursus malesuada. Curabitur faucibus, mauris sit amet bibendum venenatis, odio elit cursus arcu, eu varius lorem libero id turpis. Fusce iaculis convallis ligula, at dignissim mauris pretium at. Nulla at quam elit. ",
+    "prioridad" : "Alta",
+    "fechaAlta" : "10/10/2010",
+    "tipo" : "Mantenimiento", 
+    "listaContactos": [
+    {
+    "id" : "1",
+    "nombre" : "Daniel",
+    "apellidos" : "Doe",
+    "telefono" : "000 000 000",
+    "email" : "daniel@avisos.com"
+    }
+    ],
+    "instalacion" :
+      {"id":"1",
+  "nombre":"Av. Baviera 16",
+  "direccion":"Av. Baviera 16",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Manuel (conserje)",
+  "existenLlaves": true,
+  "existenLlavesObservaciones":"preguntar en recepción",
+  "descripcion":"Ut ante dolor, ullamcorper a venenatis id, aliquam sit amet magna. Quisque vel ante diam, rhoncus consequat orci. Nunc turpis nulla, pellentesque eu imperdiet non, porta quis nulla. Ut suscipit accumsan mauris et porta. Nam mattis volutpat viverra. Curabitur sollicitudin est ligula. Ut mi dolor, mollis pretium posuere quis, lobortis sagittis felis. Sed sollicitudin, sem nec feugiat sollicitudin, ligula urna vulputate orci, vitae mattis tortor odio vitae libero. Donec vel lorem eros, lacinia viverra nulla. Morbi eu bibendum massa. Aliquam aliquam cursus elit, a aliquam lectus imperdiet non. Aenean ut turpis turpis. ",
+  "observaciones":"UN INTERCAMBIADOR ANULADO",
+  "listaEquipos": [
+      {
+	"id" : 1,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 2,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 3,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "CUENOD",
+	"modelo" : "C22 61207/8",
+	"añoFabricacion" : "",
+	"medidas" : "240Kw",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 4,
+	"tipo" : "quemador",
+	"descripcion" : "",
+        "marca" : "CUENOD",
+          "modelo" : "C22 61207/8",
+          "añoFabricacion" : "",
+          "medidas" : "240Kw",
+          "referencia" : "",
+          "presion" : ""
+      },
+          {
+              "id" : 5,
+              "tipo" : "Bomba Calefacción",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP50112-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 6,
+              "tipo" : "Bomba Calefacción",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP50112-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 7,
+              "tipo" : "Bomba Primario",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP 40/10-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 8,
+              "tipo" : "Bomba Primario",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP 40/10-B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 9,
+              "tipo" : "Bomba retorno",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SAP 25/8T",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 10,
+              "tipo" : "Bomba recirculación",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP32-6B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 11,
+              "tipo" : "Bomba recirculación",
+              "descripcion" : "",
+              "marca" : "SEDICAL",
+              "modelo" : "SP32-6B",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 12,
+              "tipo" : "Centralita regulación",
+              "descripcion" : "",
+              "marca" : "HONEYWELL",
+              "modelo" : "MCK100",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 13,
+              "tipo" : "Centralita gas",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "SFTK",
+              "añoFabricacion" : "03/01/2012",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 14,
+              "tipo" : "Ventilador",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "K-600",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 15,
+              "tipo" : "Extractor",
+              "descripcion" : "",
+              "marca" : "INPRO",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 16,
+              "tipo" : "Llenado automático",
+              "descripcion" : "",
+              "marca" : "SPIROVENT",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 17,
+              "tipo" : "Valvula Seguridad",
+              "descripcion" : "",
+              "marca" : "1 1/2 X CALDERA",
+              "modelo" : "",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : "4bar"
+          },
+          {
+              "id" : 18,
+              "tipo" : "Vaso expansión",
+              "descripcion" : "",
+              "marca" : "ZELMET",
+              "modelo" : "80L (2)",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 18,
+              "tipo" : "Vaso expansión",
+              "descripcion" : "",
+              "marca" : "IBAIONDO",
+              "modelo" : "500AMR",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          },
+          {
+              "id" : 19,
+              "tipo" : "Caja control",
+              "descripcion" : "",
+              "marca" : "LANDIS",
+              "modelo" : "LGB22230B27",
+              "añoFabricacion" : "",
+              "medidas" : "",
+              "referencia" : "",
+              "presion" : ""
+          }
+          ],
+          "listaFotos" : [
+          
+          ], 
+          "listaTecnicos": [
+          {
+              "id" : "1",
+              "nombre" : "Daniel",
+              "apellidos" : "Doe",
+              "telefono" : "000 000 000",
+              "email" : "daniel@termainser.com"
+          }
+          ]
+      }
+
+
+
+
+
+    ,
+    "listaEquiposTareas" : [
+
+    {
+    "id" : 2,
+    "tipo" : "uno",
+    "descripcion" : "uno",
+    "marca" : "uno",
+    "modelo" : "uno",
+    "añoFabricacion" : "1000",
+    "medidas" : "nada",
+    "referencia" : "1000",
+    "presion" : "25000Kca",
+    "listaTareas" : [
+    {
+    "id" : "0",
+    "nombre" : "nombre tarea", 
+    "valor" : "valor"
+    },
+    {
+    "id" : "0",
+    "nombre" : "nombre tarea", 
+    "tipoValor" : "texto",
+    "valor" : "valor"
+    }
+
+    ]
+    }
+    ]
+
+    }
+]

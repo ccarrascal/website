@@ -1,0 +1,180 @@
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../../lib/font/league_gothic-webfont.eot");
+  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #586e75;
+  font-family: "League Gothic", Impact, sans-serif !important;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: none; 
+}
+
+
+/* TAMAÑOS DE FUENTE */
+
+.reveal h3 {
+	font-size: 2.2em !important;
+}
+
+.reveal h4 {
+	font-size: 1.5em !important;
+}
+
+section p {
+	font-size: 1.3em !important;
+}
+
+section ul,
+section ol  {
+	font-size: 1em !important;
+}
+
+
+
+i {
+	color: #666;
+	text-decoration: none;
+}
+
+
+section.cool {
+	background: url('../images/logo_drupalcamp.png') no-repeat left top;
+}
+
+img.basic {
+	border: none !important;
+	box-shadow: none !important;
+} 
+
+
+h2 span {
+	color: #255;
+}
+
+
+h3 {
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2) !important; 
+  margin-bottom: .6em !important;
+}
+
+h3 span {
+	/*color: #033;*/
+	color: #144;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5) !important; 
+  padding-right: .2em !important;
+}
+
+h4 {
+	margin-bottom: 1em !important;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2) !important; 
+	font-weight: bold !important;
+}
+
+section ul,
+section ol  {
+
+	display: block;
+	float: left;
+	width: 100%;
+	/*margin: 1em 3em !important;*/
+}
+
+
+section.small {
+	font-size: .7em;
+}
+
+section ul.clean {
+	list-style: none;
+}
+
+section ul.clean li {
+	margin-left: 2em;
+}
+
+section p {
+	margin: .6em 1em !important;
+}
+
+section ul {
+	margin-top: .2em !important;
+	display: block;
+	float: left;
+
+}
+
+section ul.centered {
+	display: inline-block;
+	float: right !important;
+	/*border: 1px #ccc solid;*/
+	text-align: center;
+	list-style-type: none;
+}
+
+section ul li {
+	margin: .3em 0 !important;
+}
+
+table {
+border-collapse: collapse !important;
+border-spacing: 2px !important;
+}
+
+.section pre {
+	margin-top: -100px !important;
+}
+
+.reveal pre code {
+	max-height: 600px !important;
+	max-width: 100% !important;
+}
+
+
+/* Contenedores */
+
+section .container {
+	/*border: 5px solid red;*/
+	display: block;
+	float: left;
+	left:0;
+	width: 190% !important;
+	font-size: .8em !important;
+}
+
+section .container .left {
+	float: left;
+	display: block;
+}
+
+
+section .container .right {
+	float: left;
+	display: block;
+
+}
+
+section .container .right p {
+	margin: 1em 0 .5em 1em;
+	text-align: left;
+}
+
+section .container .right ul {
+	margin: 1em 2em !important;
+	padding: 0px !important;
+	text-align: left;
+}
+section .container .right ul li {
+
+}

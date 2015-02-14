@@ -1,0 +1,1051 @@
+[
+  {"id":"1",
+  "nombre":"Av. Baviera 16",
+  "direccion":"Av. Baviera 16",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Manuel (conserje)",
+  "existenLlaves": true,
+  "existenLlavesObservaciones":"preguntar en recepción",
+  "descripcion":"Ut ante dolor, ullamcorper a venenatis id, aliquam sit amet magna. Quisque vel ante diam, rhoncus consequat orci. Nunc turpis nulla, pellentesque eu imperdiet non, porta quis nulla. Ut suscipit accumsan mauris et porta. Nam mattis volutpat viverra. Curabitur sollicitudin est ligula. Ut mi dolor, mollis pretium posuere quis, lobortis sagittis felis. Sed sollicitudin, sem nec feugiat sollicitudin, ligula urna vulputate orci, vitae mattis tortor odio vitae libero. Donec vel lorem eros, lacinia viverra nulla. Morbi eu bibendum massa. Aliquam aliquam cursus elit, a aliquam lectus imperdiet non. Aenean ut turpis turpis. ",
+  "observaciones":"UN INTERCAMBIADOR ANULADO",
+  "listaEquipos": [
+      {
+	"id" : 1,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 2,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "WOLF",
+	"modelo" : "MK1-220",
+	"añoFabricacion" : "",
+	"medidas" : "220Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 3,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "CUENOD",
+	"modelo" : "C22 61207/8",
+	"añoFabricacion" : "",
+	"medidas" : "240Kw",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 4,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "CUENOD",
+	"modelo" : "C22 61207/8",
+	"añoFabricacion" : "",
+	"medidas" : "240Kw",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 5,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP50112-B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 6,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP50112-B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 7,
+	"tipo" : "Bomba Primario",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP 40/10-B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 8,
+	"tipo" : "Bomba Primario",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP 40/10-B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 9,
+	"tipo" : "Bomba retorno",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SAP 25/8T",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 10,
+	"tipo" : "Bomba recirculación",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP32-6B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 11,
+	"tipo" : "Bomba recirculación",
+	"descripcion" : "",
+	"marca" : "SEDICAL",
+	"modelo" : "SP32-6B",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 12,
+	"tipo" : "Centralita regulación",
+	"descripcion" : "",
+	"marca" : "HONEYWELL",
+	"modelo" : "MCK100",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 13,
+	"tipo" : "Centralita gas",
+	"descripcion" : "",
+	"marca" : "INPRO",
+	"modelo" : "SFTK",
+	"añoFabricacion" : "03/01/2012",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 14,
+	"tipo" : "Ventilador",
+	"descripcion" : "",
+	"marca" : "INPRO",
+	"modelo" : "K-600",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 15,
+	"tipo" : "Extractor",
+	"descripcion" : "",
+	"marca" : "INPRO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 16,
+	"tipo" : "Llenado automático",
+	"descripcion" : "",
+	"marca" : "SPIROVENT",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 17,
+	"tipo" : "Valvula Seguridad",
+	"descripcion" : "",
+	"marca" : "1 1/2 X CALDERA",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 18,
+	"tipo" : "Vaso expansión",
+	"descripcion" : "",
+	"marca" : "ZELMET",
+	"modelo" : "80L (2)",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 18,
+	"tipo" : "Vaso expansión",
+	"descripcion" : "",
+	"marca" : "IBAIONDO",
+	"modelo" : "500AMR",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 19,
+	"tipo" : "Caja control",
+	"descripcion" : "",
+	"marca" : "LANDIS",
+	"modelo" : "LGB22230B27",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "Daniel",
+	"apellidos" : "Doe",
+	"telefono" : "000 000 000",
+	"email" : "daniel@termainser.com"
+      }
+    ]
+  },
+  {
+  "id":"2",
+  "nombre":"C.P. Alfonso Rodríguez Santa María 18",
+  "direccion":"",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Presidenta 3º A",
+  "existenLlaves": true,
+  "existenLlavesObservaciones":"llaves en pared a la derecha de la puerta de la sala de calderas",
+  "descripcion":"Otra descipci\u00f3n mas para otra instalaci\u00f3n.\r\n\r\nInstalaci\u00f3n mejor que la anterior",
+  "observaciones":"",
+  "listaEquipos": [
+      {
+	"id" : 20,
+	"tipo" : "Caldera",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "G100/90IE",
+	"añoFabricacion" : "1989",
+	"medidas" : "112 Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 21,
+	"tipo" : "Caldera",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "G100/90IE",
+	"añoFabricacion" : "1988",
+	"medidas" : "112 Kw",
+	"referencia" : "",
+	"presion" : "4bar"
+      },
+      {
+	"id" : 22,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "MC1230",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 23,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "MC1230",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 24,
+	"tipo" : "Bomba Primario",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "PC1025",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 25,
+	"tipo" : "Bomba Primario",
+	"descripcion" : "",
+	"marca" : "GRUNDFOS",
+	"modelo" : "UP20-15N130",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 26,
+	"tipo" : "Bomba retorno",
+	"descripcion" : "",
+	"marca" : "GRUNDFOS",
+	"modelo" : "UP20-15N130",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 27,
+	"tipo" : "Centralita regulación",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "ELFATHERM EZ-M",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 28,
+	"tipo" : "Centralita incendios",
+	"descripcion" : "",
+	"marca" : "INPRO",
+	"modelo" : "SFIK",
+	"añoFabricacion" : "1989",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 29,
+	"tipo" : "Vaso expansión",
+	"descripcion" : "",
+	"marca" : "IBAIONDO",
+	"modelo" : "50CMF",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 30,
+	"tipo" : "Vaso expansión",
+	"descripcion" : "",
+	"marca" : "IBAIONDO",
+	"modelo" : "50AMR-0",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 31,
+	"tipo" : "Vaso calefacción",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "VASOFLEX140/1",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 32,
+	"tipo" : "Interacumulador ACS",
+	"descripcion" : "",
+	"marca" : "ACV",
+	"modelo" : "SMART420L",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 33,
+	"tipo" : "VÁLVULA ACS",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "SM40",
+	"añoFabricacion" : "",
+	"medidas" : "11-2",
+	"referencia" : "ROSCA",
+	"presion" : ""
+      },
+      {
+	"id" : 33,
+	"tipo" : "VÁLVULA ACS",
+	"descripcion" : "",
+	"marca" : "ROCA",
+	"modelo" : "SM40",
+	"añoFabricacion" : "",
+	"medidas" : "2",
+	"referencia" : "ROSCA",
+	"presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "Daniel",
+	"apellidos" : "Doe",
+	"telefono" : "000 000 000",
+	"email" : "daniel@avisos.com"
+      }
+    ]
+  },
+  {  "id":"3",
+  "nombre":"ALCALA 161",
+  "direccion":"Calle Alcalá 161",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"CONSERJE- CARLOS TELF: 689 14 70 93",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"ninguna",
+  "descripcion":"",
+  "observaciones":"SALA DE CALDERAS EN SOTANO. LA CENTRALITA NO FUNCIONA. HAY UN RELOJ DENTRO DEL CUADRO",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 42,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "SRP8",
+	"añoFabricacion" : "",
+	"medidas" : "2\" 1/2",
+	"referencia" : "Brida",
+	"presion" : ""
+      },
+      {
+	"id" : 43,
+	"tipo" : "Bomba recirculación",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "1\" 1/2",
+	"referencia" : "Roscada",
+	"presion" : ""
+      },
+      {
+	"id" : 44,
+	"tipo" : "Centralita regulación",
+	"descripcion" : "",
+	"marca" : "FANTINI",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 45,
+	"tipo" : "Centralita incendios",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 46,
+	"tipo" : "Centralita gas",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 47,
+	"tipo" : "Ventilador",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 48,
+	"tipo" : "Extractor",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 49,
+	"tipo" : "Llenado automático",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 50,
+	"tipo" : "Valvula Seguridad",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 51,
+	"tipo" : "Vaso expansión",
+	"descripcion" : "",
+	"marca" : "ABIERTO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "JAVIER",
+	"apellidos" : "TOMÁS",
+	"telefono" : "000 000 000",
+	"email" : "javiertomas@termainser.com"
+      }
+    ]
+  },
+  {  "id":"4",
+  "nombre":"BRAVO MURILLO 45",
+  "direccion":"Calle BRAVO MURILLO 45",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"",
+  "descripcion":"SALA DE CALDERAS EN AZOTEA",
+  "observaciones":"GRUPO DE PRESIÓN EN GARAJE Y NO HAY LLAVES",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 42,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "SRP8",
+	"añoFabricacion" : "",
+	"medidas" : "2\" 1/2",
+	"referencia" : "Brida",
+	"presion" : ""
+      },
+      {
+	"id" : 43,
+	"tipo" : "Bomba recirculación",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "1\" 1/2",
+	"referencia" : "Roscada",
+	"presion" : ""
+      },
+      {
+	"id" : 44,
+	"tipo" : "Centralita regulación",
+	"descripcion" : "",
+	"marca" : "FANTINI",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 45,
+	"tipo" : "Centralita incendios",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "JUAN",
+	"apellidos" : "ROBLES",
+	"telefono" : "000 000 000",
+	"email" : "daniel@termainser.com"
+      }
+    ]
+  },
+  {  "id":"5",
+  "nombre":"Canillas 56",
+  "direccion":"Calle Canillas 56",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Portero",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"6ºA",
+  "descripcion":"Descripción de la instalación",
+  "observaciones":"Observaciones de la instalacion",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 42,
+	"tipo" : "Bomba Calefacción",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "SRP8",
+	"añoFabricacion" : "",
+	"medidas" : "2\" 1/2",
+	"referencia" : "Brida",
+	"presion" : ""
+      },
+      {
+	"id" : 43,
+	"tipo" : "Bomba recirculación",
+	"descripcion" : "",
+	"marca" : "PERFECTA",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "1\" 1/2",
+	"referencia" : "Roscada",
+	"presion" : ""
+      },
+      {
+	"id" : 44,
+	"tipo" : "Centralita regulación",
+	"descripcion" : "",
+	"marca" : "FANTINI",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+	"id" : 45,
+	"tipo" : "Centralita incendios",
+	"descripcion" : "",
+	"marca" : "NO",
+	"modelo" : "",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "Daniel",
+	"apellidos" : "Doe",
+	"telefono" : "000 000 000",
+	"email" : "daniel@termainser.com"
+      }
+    ]
+  },
+  { "id":"6",
+  "nombre":"CRISTOBAL BORDIU 4",
+  "direccion":"Calle CRISTOBAL BORDIU 4",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"",
+  "descripcion":"ENTRAR POR GARAJE - PUERTA IZQUIERDA SITUADA EN LA CALLE",
+  "observaciones":"BAJAR LA RAMPA Y PUERTA DE CHAPA MARRÓN",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+          "id" : 42,
+          "tipo" : "Bomba Calefacción",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "SRP8",
+          "añoFabricacion" : "",
+          "medidas" : "2\" 1/2",
+          "referencia" : "Brida",
+          "presion" : ""
+      },
+      {
+          "id" : 43,
+          "tipo" : "Bomba recirculación",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "GP30",
+          "añoFabricacion" : "",
+          "medidas" : "1\" 1/2",
+          "referencia" : "Roscada",
+          "presion" : ""
+      },
+      {
+          "id" : 44,
+          "tipo" : "Centralita regulación",
+          "descripcion" : "",
+          "marca" : "FANTINI",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      },
+      {
+          "id" : 45,
+          "tipo" : "Centralita incendios",
+          "descripcion" : "",
+          "marca" : "NO",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "Daniel",
+	"apellidos" : "Doe",
+	"telefono" : "000 000 000",
+	"email" : "daniel@avisos.com"
+      }
+    ]
+  },
+{ "id":"7",
+  "nombre":"D. RAMÓN DE LA CRUZ 23",
+  "direccion":"Calle D. RAMÓN DE LA CRUZ 23",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"VALENTIN (CONSERJE)",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"Llamar sotano",
+  "descripcion":"",
+  "observaciones":"",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+          "id" : 42,
+          "tipo" : "Bomba Calefacción",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "SRP8",
+          "añoFabricacion" : "",
+          "medidas" : "2\" 1/2",
+          "referencia" : "Brida",
+          "presion" : ""
+      },
+      {
+          "id" : 43,
+          "tipo" : "Bomba recirculación",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "GP30",
+          "añoFabricacion" : "",
+          "medidas" : "1\" 1/2",
+          "referencia" : "Roscada",
+          "presion" : ""
+      },
+      {
+          "id" : 44,
+          "tipo" : "Centralita regulación",
+          "descripcion" : "",
+          "marca" : "FANTINI",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      },
+      {
+          "id" : 45,
+          "tipo" : "Centralita incendios",
+          "descripcion" : "",
+          "marca" : "NO",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "JAVIER",
+	"apellidos" : "TOMÁS",
+	"telefono" : "000 000 000",
+	"email" : "daniel@termainser.com"
+      }
+    ]
+  },
+{ "id":"8",
+  "nombre":"Colegio Las Nazaret",
+  "direccion":"C/ Quintiliano nº 3",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"siempre hay gente",
+  "existenLlaves": 0,
+  "existenLlavesObservaciones":"llamar telefonillo",
+  "descripcion":"",
+  "observaciones":"TIENE RELOJ INTERIOR",
+  "listaEquipos": [
+      {
+	"id" : 40,
+	"tipo" : "caldera",
+	"descripcion" : "",
+	"marca" : "CALINTER",
+	"modelo" : "SC 250",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : "25000Kca"
+      },
+      {
+	"id" : 41,
+	"tipo" : "quemador",
+	"descripcion" : "",
+	"marca" : "JOANNES",
+	"modelo" : "GP30",
+	"añoFabricacion" : "",
+	"medidas" : "",
+	"referencia" : "",
+	"presion" : ""
+      },
+      {
+          "id" : 42,
+          "tipo" : "Bomba Calefacción",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "SRP8",
+          "añoFabricacion" : "",
+          "medidas" : "2\" 1/2",
+          "referencia" : "Brida",
+          "presion" : ""
+      },
+      {
+          "id" : 43,
+          "tipo" : "Bomba recirculación",
+          "descripcion" : "",
+          "marca" : "PERFECTA",
+          "modelo" : "GP30",
+          "añoFabricacion" : "",
+          "medidas" : "1\" 1/2",
+          "referencia" : "Roscada",
+          "presion" : ""
+      },
+      {
+          "id" : 44,
+          "tipo" : "Centralita regulación",
+          "descripcion" : "",
+          "marca" : "FANTINI",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      },
+      {
+          "id" : 45,
+          "tipo" : "Centralita incendios",
+          "descripcion" : "",
+          "marca" : "NO",
+          "modelo" : "",
+          "añoFabricacion" : "",
+          "medidas" : "",
+          "referencia" : "",
+          "presion" : ""
+      }
+    ],
+  "listaFotos" : [
+
+    ], 
+  "listaTecnicos": [
+      {
+	"id" : "1",
+	"nombre" : "Daniel",
+	"apellidos" : "Doe",
+	"telefono" : "000 000 000",
+	"email" : "daniel@avisos.com"
+      }
+    ]
+  }
+
+]

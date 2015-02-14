@@ -1,0 +1,49 @@
+{
+"id":"3",
+"nombre":"Morbi imperdiet nisl libero, at condimentum eros. ",
+"descripcion":"Curabitur ornare tincidunt libero, quis aliquam eros auctor sit amet. Suspendisse sollicitudin, magna ut ornare tristique, lacus nisi venenatis nisi, nec sagittis sapien quam ut nisi. Sed fringilla cursus malesuada. Curabitur faucibus, mauris sit amet bibendum venenatis, odio elit cursus arcu, eu varius lorem libero id turpis. Fusce iaculis convallis ligula, at dignissim mauris pretium at. Nulla at quam elit. ",
+"prioridad" : "Alta",
+"fechaAlta" : "10/10/2010",
+"tipo" : "Mantenimiento", 
+"listaContactos": [
+    {
+      "id" : "1",
+      "nombre" : "Daniel",
+      "apellidos" : "Doe",
+      "telefono" : "000 000 000",
+      "email" : "daniel@avisos.com"
+    }
+  ],
+"instalacion" : [
+
+],
+"listaEquiposTareas" : [
+
+    {
+      "id" : 2,
+      "tipo" : "uno",
+      "descripcion" : "uno",
+      "marca" : "uno",
+      "modelo" : "uno",
+      "añoFabricacion" : "1000",
+      "medidas" : "nada",
+      "referencia" : "1000",
+      "presion" : "25000Kca",
+      "listaTareas" : [
+	  {
+	    "id" : "0",
+	    "nombre" : "nombre tarea", 
+	    "valor" : "valor"
+	  },
+	  {
+	    "id" : "0",
+	    "nombre" : "nombre tarea", 
+	    "tipoValor" : "texto",
+	    "valor" : "valor"
+	  }
+
+      ]
+    }
+]
+
+}

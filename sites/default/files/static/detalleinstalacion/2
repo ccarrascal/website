@@ -1,0 +1,48 @@
+{"id":"2",
+"nombre":"Segunda Instalaci\u00f3n",
+"direccion":"Avenida de Espa\u00f1a 1, 1D",
+"poblacion":"Legan\u00e9s",
+"provincia":"Madrid",
+"contacto":"Conserje,  carlos . tlf 699999999",
+"existenLlaves": 0,
+"existenLlavesObservaciones":"preguntar en recepción",
+"descripcion":"Otra descipci\u00f3n mas para otra instalaci\u00f3n.\r\n\r\nInstalaci\u00f3n mejor que la anterior",
+"observaciones":"Observaciones de la instalacion",
+"listaEquipos": [
+    {
+      "id" : 2,
+      "tipo" : "uno",
+      "descripcion" : "uno",
+      "marca" : "uno",
+      "modelo" : "uno",
+      "añoFabricacion" : "1000",
+      "medidas" : "nada",
+      "referencia" : "1000",
+      "presion" : "25000Kca"
+    },
+    {
+      "id" : 2,
+      "tipo" : "dos",
+      "descripcion" : "dos",
+      "marca" : "dos",
+      "modelo" : "dos",
+      "añoFabricacion" : "2000",
+      "medidas" : "nada",
+      "referencia" : "1000",
+      "presion" : "25000Kca"
+
+    }
+  ],
+"listaFotos" : [
+
+  ], 
+"listaTecnicos": [
+    {
+      "id" : "1",
+      "nombre" : "Daniel",
+      "apellidos" : "Doe",
+      "telefono" : "000 000 000",
+      "email" : "daniel@avisos.com"
+    }
+  ]
+}

@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Construcción de portales dinámicos: Listados configurables por usuario</title>
+
+		<meta name="description" content="Construcción de portales dinámicos">
+		<meta name="author" content="Carlos Carrascal">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- <section class="22cool"  data-background="images/logo_drupalcamp.png"> -->
+				<section class="22cool">
+					<h1>Drupalcamp 2014</h1>
+					<!-- <img class="basic" src="images/logo_drupalcamp.png" /> -->
+					<h2>Construcción de portales dinámicos</h2>
+					<h5>Listados configurables por usuario</h5>
+					<p>
+						<small><a href="http://carloscarrascal.com">Carlos Carrascal</a> - <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a><br />
+						 	[ <a href="mailto:ccarrascal@indra.es">ccarrascal@indra.es</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ]
+						 	
+						</small>
+					</p>
+					<p>
+						<small><a  href="http://www.indra.es"><img class="basic" src="images/indra_basic_logo.gif" alt="Indra" /></a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h4>Índice</h4>
+						<ol start="00">
+							<li>Introducción 
+							<li>Listas automáticas
+							<li>Listados filtrados
+							<li>Filtros expuestos para usuarios
+							<li>Filtros expuestos configurables
+							<li>Agradecimientos
+							<li>Preguntas
+							<li>Despedida y cierre</li>
+						</ol>
+					</section>
+
+
+				</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+						<h2><span>00.</span> Introducción</h2>
+						<ul class="clean">
+							<li>00.1 Quien soy yo</li>
+							<li>00.2 Lo mas importante</li>
+							<li>00.3 Que vamos a hacer</li>
+							<li>00.4 ¿Porqué todo esto?</li>
+							<li>00.5 Una cosa mas</li>
+						</ul>
+		</section>
+				
+				<section>
+					<section>
+					<h3><span>00.1</span>Quien soy yo</h3>
+					<p>
+						Carlos Carrascal Sánchez<br />
+						<a href="https://twitter.com/ccarrascal77">@ccarrascal77</a> <br />
+						<small>
+						 	[ <a href="mailto:ccarrascal@indra.es">ccarrascal@indra.es</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ] <br />
+						 	[ <a href="http://www.carloscarrascal.com" target="_blank">http://www.carloscarrascal.com</a> ]
+						</small>
+					</p>
+					<p>
+						Soy responsable de desarrollo con Drupal en Indra, en el departamento de Omnicanalidad.
+					<p>
+  				</section>
+  				<section>
+  					<p>Llevo trabajando en informática desde 1998, en varias consultoras:</p>
+  					<ul class="centered">
+  						<li>Coritel</li>
+  						<li>qarana solutions</li>
+  						<li>Azertia</li>
+  						<li>Indra</li>
+  					</ul>
+  				</section>
+  				<section>
+  					<p>Siempre he trabajado en temas relacionados con la web, gestión documental, portales, etc.</p>
+  				</section>
+				</section>
+
+
+				<section data-transition="zoom" data-background-transition="zoom">
+					<section>
+						<h3><span>00.2</span> Lo mas importante</h3>
+						<p>
+						<strong>Enfocar el desarrollo a la explotación del producto.</strong> 
+						</p>
+					</section>
+					<section>
+						<p>Pero además: </p>
+						<p><strong>Cada proyecto es un mundo.</strong> </p>
+						<p>No siempre podremos hacer las cosas y trabajar como nos gustaría.</p>
+						<p>
+	  					Tendremos unos presupuestos distintos, requisitos, etapas, tiempos de ejecución, etc.
+	  				</p>
+					</section>
+					
+					<section>
+						<p>
+							El factor mas importante de éxito en nuestro trabajo será que nuestros productos sean usables.</p>
+						</p>
+					</section>
+
+					<section>
+
+						<p>		Pretendemos desarrollar una solución lo
+						  mas genérica posible, a partir de la cual se pueda construir lo que el cliente necesita,
+						  en vez de limitarnos a construir literalmente lo que el cliente nos está pidiendo, que en muchos
+						  casos ni siquiera será lo que realmente quiere. 
+						</p>
+					</section>
+
+					<section>
+
+					  <p>
+					  De esta forma, esperamos que nuestro producto será realmente usable en el día a día. 
+					  Se podrá trabajar con el, extenderlo, modificarlo...
+						</p>
+						<p>Siempre dentro de lo razonable. Y de nuestro presupuesto</p>
+					</section>
+
+<!-- 					<section>
+						<p>Porque si el cliente no está contento, o surgen demasiadas incidencias después de la entrega...</p>
+						<ul>
+							<li>Habremos invertido demasiado tiempo en solucionar indicencias y perderemos rentabilidad</li>
+							<li>Habremos perdido el cliente y no volverá a trabajar con nosotros</li>
+						</ul>
+
+					</section>
+ -->
+
+				</section>
+
+				<section data-transition="zoom" data-background-transition="zoom">
+					<section>
+						<h3><span>00.3</span> Que vamos a hacer</h3>
+					
+						<p>Vamos a implementar un sistema para conseguir que nuestros editores de contenido,
+							<strong>sin conocimientos técnicos</strong>, sean capaces de crear listados en sus portales de
+							forma sencilla e intuitiva, igual que gestionan el resto de sus contenidos, y además
+							aplicarles cierta personalización.</p>
+					</section>
+
+					<section>
+						<p>En palabras mas técnicas: </p>
+						<p>Usaremos nodos para mostrar listados de otros nodos,
+							estableciendo filtros por tipo de contenido, por términos de taxonomía, o por valores
+							de los campos esos nodos.
+						</p>
+					</section>
+
+					<section>
+						<h4>Como lo haremos</h4>
+						<p>Mediante los siguientes componentes:</p>
+						<ul>
+							<li>Tipo de contenido a listar: Nodos normales y corrientes</li>
+							<li>Tipo de contenido que implementará la lista: El quiz de la cuestión, lo llamaremos
+								"listado de N"</li>
+							<li>Vista de tipo bloque: Implementará el listado propiamente dicho.</li>
+							<li>Contexto: Relacionará el "listado de N" con la vista correspondiente</li> 
+							<li>Feature: La usaremos para empaquetar todo, y para implementar código en su fichero .module</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h4>Que necesitamos</h4>
+						<p>Necesitaremos una instalación de Drupal 7 con los siguientes módulos:</p>
+						<ul>
+							<li><strong>Views:</strong> Para crear los listados.</li>
+							<li><strong>Context:</strong> Para asociar los nodos de listados y sus vistas.</li>
+							<li><strong>Features:</strong> Nos vendrán bien para empaquetar y todo y añadir funcionalidad.</li>
+							<li><strong>Display Suite:</strong> No es imprescindible, pero si totalmente recomendable.</li>
+						</ul>
+
+					</section>
+
+				</section>
+
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+						<h3><span>00.4</span> ¿Porqué? </h3>
+					<p>
+						Entre las ventajas que podemos destacar de esta forma de implementar listados tenemos:
+	  			</p>
+	  			<ul>
+	  				<li><strong>Añadir contenido a los listados:</strong> Podremos tratar los listados como cualquier
+	  					otro contenido, añadiendo texto, bloques, contextos, paneles, etc.</li>
+	  				<li><strong>Multilenguage:</strong> Podremos traducir su contenido, su url, sus campos, etc.
+	  					Además, se podrá controlar si aparecen o no en un determinado idioma, creando una traducción o no.</li>
+	  				</ul>
+				</section>
+				<section>
+	  			<ul>
+	  				<li><strong>Facilitar la gestión de contenido a los editores:</strong> Para perfiles no técnicos es mas
+	  					sencillo simplemente montar listados como cualquier otra página. Además ahorramos problemas evitando que
+	  					el usuario sin conocimientos técnicos acceda a la gestión de las vistas.</li>
+	  				<li><strong>Reducir la cantidad de vistas:</strong> En muchos casos este tipo de enfoque reducirá la cantidad
+	  					de vistas a desarrollar.</li>
+	  				<li><strong>Mejorar la calidad:</strong> Y si no la calidad, por lo menos la percepción de calidad del usuario.</li>
+	  				</ul>
+				</section>
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+					<h3><span>00.5</span> Una cosa mas </h3>
+					<p>
+						Existe un módulo que hace básicamente lo mismo que vamos a hacer aquí a mano.
+	  			</p>
+	  			<p>
+	  				<a href="http://drupal.org/project/custom_listing_pages" target="_blank" title="custom_listing_pages">custom_listing_pages</a> 
+	  			</p>
+				</section>
+				<section>
+					<p>
+						Merece la pena probarlo si necesitamos algo sencillo, pero para un proyecto grande,
+						hacerlo a mano nos permitirá controlar completamente las funcionalidades que queramos presentar
+						al usuario.
+	  			</p>
+				</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+					<h4>Empezamos... </h4>
+					<!-- <img src="images/dolby-trailer-countdown-o.gif" /> -->
+					<img src="images/countdown-3.gif" class="basic" />
+				</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+						<h2><span>01.</span> Listas automáticas</h2>
+						<ul class="clean">
+							<li>01.1 Nodos y vistas</li>
+							<li>01.2 Tipo de contenido a listar</li>
+							<li>01.3 Tipo de contenido de listado</li>
+							<li>01.4 La vista</li>
+							<li>01.5 El contexto</li>
+							<li>01.6 Ejemplo</li>
+						</ul>
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.1</span> Nodos y vistas</h3>
+					<p>
+						En Drupal hay dos funcionalidades básicas para la presentación de contenidos:
+					</p>
+					<ul>
+						<li><i>Content Constructión Kit (CCK)</i> para la creación de tipologías de contenido, incluido
+							en el core de Drupal 7</li>
+						<li><i>Views</i> para listados, todavía como módulo, se pretende incluir al core de Drupal 8</li>
+					</ul>
+
+			</section>
+
+			<section>
+				<p>Tradicionalmente, se suele manejar y desarrollar de forma separada la presentación
+					de los contenidos, y de sus listados.</p>
+			</section>
+
+			<section>
+				<p>La configuración de las vistas suele ser demasiado compleja para un usuario sin conocimientos técnicos.</p>
+			</section>
+
+			<section>
+				<p>Vamos a intentar facilitar la tarea de gestión del contenido, permitiendo a los editores crear listados 
+					simplemente creando un nodo de un tipo especial, que mostrará un listado de forma automática.</p>
+			</section>
+
+
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.2</span> Tipo de contenido a listar</h3>
+					<p>
+						Lo primero será crear el tipo de contenido que queremos listar.</p>
+					<p>Para nuestro ejemplo podemos utilizar el
+						<i>Article</i>, de la instalación por defecto de Drupal.
+					</p>
+			</section>
+
+			<section>
+					<p>
+						Configuraremos los campos que necesitemos dependiendo de nuestras necesidades.
+					</p>
+					<p>
+						De momento no hay nada especial que debamos tener en cuenta para este tipo de contenido.
+					</p>
+
+			</section>
+
+			<section data-background="images/article-content-type.png">
+			</section>
+
+
+			<section>
+				<p>Si estamos usando Display Suite, configuraremos al menos los modos:</p>
+				<ul>
+				 <li><i>Teaser:</i> Para los listados.</li>
+				 <li><i>Default:</i> Para la vista completa de nodo.</li>
+				</ul>
+			</section>
+
+
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.3</span> Tipo de contenido de listado</h3>
+					<p>
+						Este es el tipo de contenido que efectivamente creará el listado.
+						Por ejemplo, si vamos a listar Articulos, podemos llamarlo "Listado de Artículos".
+					</p>
+			</section>
+
+			<section>
+					<p>
+						De momento no necesitamos añadir ningún campo especial a este tipo de contenido. Podemos 
+						incluir o no un campo Body, dependiendo si queremos que nuestros listados muestren texto, por ejemplo.
+					</p>
+			</section>
+
+			<section>
+				<p>Ejemplo:</p>
+				<p>Tipo de contenido Listado de Artículos con campos por defecto.</p>
+				<a href="images/article-content-display.png"><img src="images/article-content-display.png" title="Tipo de contenido Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>
+					Si estamos usando Display Suite, solo necesitaremos el modo Default o Full content, para la vista completa de nodo.
+				</p>
+				<p>
+					Es recomendable desactivar la opción de "Mostrar en la página de incio".
+				</p>
+
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.4</span> La vista</h3>
+					<p>
+						Ahora crearemos la vista que usaremos para listar, siguiendo nuestro ejemplo, los nodos de tipo Artículo.
+					</p>
+			</section>
+
+			<section>
+					<ul>
+						<li>Seleccionaremos mostrar <i>Content</i> de tipo <i>Artículo</i>.</li>
+						<li>Ordenados por fecha de creación (o cualquier otra opción)</li>
+						<li>Crearemos una vista de tipo <i>Block</i>. No será necesario crear un modo <i>Page</i>.</li>
+						<li>Si usamos <i>Display Suite</i>, seleccionamos el modo de listado, normalmente <i>Teaser</i>.</li>
+						<li>Opcionalmente, podemos configurar o no un paginador.</li>
+					</ul>
+			</section>
+
+			<section>
+				<p>Vista de tipo bloque para el tipo de contenido Artículo.</p>
+				<a href="images/article-view-block.png"><img src="images/article-view-block.png" title="Vista Listado de artículos" /></a>
+			</section>
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.5</span> El contexto</h3>
+					<p>
+						Por último, el contexto que usaremos como punto de unión entre vista y nodo de listado.
+					</p>
+			</section>
+
+			<section>
+					<ul>
+						<li>Seleccionaremos como condición de activación <i>Content Type</i>, y marcaremos el tipo de contenido que hace de listado, en nuestro caso <i>Listado de Artículos</i>.</li>
+						<li>Recomendable desactivar la opción <i>"Set on node form"</i>, para evitar que se active en las pantallas de edición del nodo.</li>
+						<li>Activamos la reacción de <i>Blocks</i></li>
+						<li>Añadimos en la región que nos interese el bloque de la vista creada en el punto anterior, el <i>Listado de Artículos</i></li>
+					</ul>
+			</section>
+
+			<section>
+				<p>Condiciones del contexto para asociar la vista al tipo de contenido Listado de Artículos.</p>
+				<a href="images/article-context-conditions.png"><img src="images/article-context-conditions.png" title="Contexto Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>Reacciones del contexto para asociar la vista al tipo de contenido Listado de Artículos.</p>
+				<a href="images/article-context-blocks.png"><img src="images/article-context-blocks.png" title="Contexto Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>Ahora cada vez que se acceda a un nodo de tipo <i>Listado de Artículos</i>, nuestro nuevo contexto
+					se encargará de pintar la vista de bloque en la región que queramos. Si nuestro tema de presentación
+					dispone de una región <i>Content bottom</i>, podremos tener nuestro listado debajo de un bloque de texto.</p>
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+				<h3><span>01.6</span> Ejemplo</h3>
+				<p>
+					Listado de nodos tipo <i>Article</i>
+	 			</p>
+				<a href="images/listado-de-articulos.png"><img src="images/listado-de-articulos.png" title="Listado de artículos" /></a>
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>02.</span> Listados filtrados</h2>
+				<ul class="clean">
+					<li>02.1 Taxonomía</li>
+					<li>02.2 Contenidos: Referencia al término</li>
+					<li>02.3 Listado: Referencia al término</li>
+					<li>02.4 Vista: Filtro contextual</li>
+					<li>02.5 Ejemplos</li>
+				</ul>
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.1</span> Taxonomía</h3>
+						<p>
+							Para poder establecer un primer filtro sobre nuestros listados, vamos a crear una
+							taxonomía.
+						</p>
+						<p>Incluiremos referencias a términos tanto en los contenidos a listar, como en los
+							nodos que hacen de listado.
+						</p>
+						<p>Vamos a usar la taxonomía por defecto <i>Tags</i>.</p>
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>02.2</span> Contenidos: Referencia al término</h3>
+						<p>
+							Vamos a incluir un campo de tipo <i>Term reference</i> en el tipo de contenido <i>Article</i>,
+							 para poderlos filtrar cuando los listemos.
+						</p>
+						<p>
+							Podemos configurar el campo con valor único o multivalor, con checks o autocompletar, etc.
+						</p>
+			</section>
+			<section>
+				<p>
+					No hay ningún misterio en añadir un campo a un tipo de contenido.
+	 			</p>
+				<a href="images/article-content-type-tags.png"><img src="images/article-content-type-tags.png" title="Un campo nuevo" /></a>
+			</section>
+			<section data-background="images/article-content-type-tags.png">
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.3</span>Listado: Referencia al término</h3>
+						<p>
+							Incluimos también un campo de tipo <i>Term reference</i> en el tipo de contenido <i>Listado de artículos</i>,
+							para tener un criterio con el que filtrar.
+						</p>
+						<p>
+							Aqui también podemos configurar el campo con valor único o multivalor, con checks o autocompletar, etc.
+						</p>
+			</section>
+			<section>
+				<p>
+					Tampoco hay aquí ningun misterio, ya hemos visto mas campos como estos.
+	 			</p>
+				<a href="images/article-list-content-type-tags.png"><img src="images/article-list-content-type-tags.png" title="Otro campo nuevo" /></a>
+			</section>
+			<section data-background="images/article-list-content-type-tags.png">
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.4</span>Vista: Filtro contextual</h3>
+						<p>
+							Vamos a añadir a la vista que hemos creado un <i>Filtro contextual</i> de tipo <i>Content: Has taxonomy term ID</i>. 
+						</p>
+						<p>
+							Este filtro relacionará el campo de los nodos a listar con el campo del listado que estamos viendo.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter.png">
+			</section>
+			<section data-background="images/article-view-contextual-filter-1.png">
+			</section>
+
+			<section>
+						<p>
+							Este tipo de filtros se hacen llegar a la vista como un parámetro en la llamada, cuando la vista es de tipo <i>page</i>, por ejemplo. 
+						</p>
+						<p>
+							En este caso, el truco consiste en especificar un comportamiento para cuando no dispongamos de valor para el, asignándole un valor por defecto.
+						</p>
+			</section>
+
+			<section>
+						<p>
+							Con la opción de <i>Taxonomy term ID from URL</i>, y marcando <i>Load default filter from node page</i>, 
+							le indicamos al filtro que debe buscar el valor en el nodo que estamos visualizando, es decir, el valor
+							del campo <i>Tags</i> del listado que queremos mostrar.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-2.png">
+			</section>
+
+
+			<section>
+						<p>
+							Podemos limitar el filtro por vocabulario, marcando los que nos interesen de los existentes. 
+						</p>
+						<p>
+							Otra opción interesante que afectará a los resultados del listado es si utilizará una condición
+							<i>AND</i> o un <i>OR</i> cuando tengamos múltiples terminos para filtrar en el listado.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-3.png">
+			</section>
+
+			<section>
+						<p>
+							Por último podemos configurar un valor como excepción para saltarnos el filtro. Cuando la vista
+							reciba este valor, dejara de aplicar el filtro contextual, forzando a sacar todos los resultados. 
+						</p>
+						<p>
+							Para el caso de términos de taxonomía, necesitaremos indicar el <i>id</i> del término.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-4.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>02.5</span>Ejemplo</h3>
+						<p>
+							La siguiente pantalla es una lista de articulos que se obtiene filtrando por un valor de 
+							termino de taxonomía.
+						</p>
+
+			</section>
+
+			<section data-background="images/listado-articulos-filtrado-term.png">
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>03.</span> Filtros expuestos para usuarios</h2>
+				<ul class="clean">
+					<li>03.1 Vista: añadir filtros expuestos</li>
+					<li>03.2 Vista: añadir campo de orden expuesto</li>
+					<li>03.3 Ejemplos</li>
+				</ul>
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.1</span> Vista: añadir filtros expuestos</h3>
+						<p>
+							Cuando utilizamos este enfoque para listar también podemos exponer los filtros de la vista que hemos creado,
+							y se aplicarán sobre los resultados ademas del filtro contextual, sin ningún problema.
+						</p>
+			</section>
+			<section>
+						<p>
+							Al estar usando una visualización de bloque en la vista, para que funcionen correctamtente
+							los filtros expuestos tendremos que activar la opción de usar <i>AJAX</i>, en la sección de 
+							<i>Advanced</i> / <i>Others</i> de la vista.
+						</p>
+			</section>
+			<section>
+				<p>Establecemos un filtro de la forma habitual, del tipo que necesitemos: fechas, texto, campo, etc.
+	 			</p>
+			</section>
+			<section data-background="images/article-view-exposed-filter-1.png">
+			</section>
+			<section>
+				<p>Lo exponemos al usario. Podemos usar <i>Single</i>, <i>Grouped</i> y cualquier combinación de valores
+					que necesitemos.
+	 			</p>
+			</section>
+			<section data-background="images/article-view-exposed-filter-2.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.2</span> Vista: añadir campo de orden expuesto</h3>
+						<p>
+							Al igual que pasa con los filtros expuestos, también podemos exponer los criterios
+							de orden del listado de la forma habitual, y permitir que el usuario los modifique.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-exposed-order-1.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.3</span> Ejemplo</h3>
+						<p>
+							En este listado se puede ver el formulario expuesto con los filtros y orden para 
+							que el usuario los utilize.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-exposed-1.png">
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>04.</span> Filtros expuestos configurables</h2>
+				<ul class="clean">
+					<li>04.1 La idea</li>
+					<li>04.2 La Feature</li>
+					<li>04.3 Modificar filtros expuestos por código</li>
+					<li>04.4 Ejemplos</li>
+				</ul>
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>04.1</span> La idea</h3>
+						<p>
+							Ahora que tenemos filtros expuestos en nuestros listados, podemos añadir algo de 
+							lógica para ir un poco más allá.
+						</p>
+			</section>
+			<section>
+						<p>
+							Una posibilidad interesante es permitir al editor de contenidos seleccionar que filtros
+							o que criterios de ordenación quiere exponer, de entre aquellos que tengamos configurados
+							en la vista.
+						</p>
+			</section>
+			<section>
+						<p>
+							Para ello, podemos añadir algunos campos a nuestro tipo de contenido <i>Listado de artículos</i>
+							mediante los que controlaremos el funcionamiento de los filtros.
+						</p>
+						<p>
+							Usaremos un campo de tipo <i>Boolean</i> por cada filtro o criterio de orden que necesitemos
+							activar o desactivar.
+						</p>
+			</section>
+
+			<section data-background="images/article-list-exposed-fields.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>04.2</span> La Feature</h3>
+						<p>							
+							Deberíamos utilizar <i>Features</i> siempre, pero en este caso lo haremos para:
+						</p>
+						<ul>
+							<li>Empaquetar juntos todos los componentes de nuestro listado: Tipos, vistas y contexto.</li>
+							<li>Utilizar el archivo <i>.module</i> de la <i>Feature</i> para incluir el código necesario
+								para controlar los filtros.</li>
+						</ul>
+			</section>
+
+			<section>
+						<p>
+							A continuación se muestra un ejemplo de los componente del listado incluidos en una <i>Feature</i>.
+						</p>
+			</section>
+
+			<section data-background="images/article-listing-feature.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>04.3</span> Modificar filtros expuestos por código</h3>
+						<p>
+							Vamos a usar un <i>hook</i> para alterar el formulario de los filtros expuestos
+							y ocultar los que correspondan, en función de los que tengamos seleccionados en el 
+							nodo del listado.
+						</p>
+			</section>
+			<section>
+						<p>Podemos implementar <i>hook_form_FORM_ID_alter</i>. En nuestro código necesitaremos
+							acceder a la información del nodo actual, y la forma mas sencilla es un <i>node_load</i>.
+			</section>
+			<section>
+						<p>
+							A continuación se muestra un ejemplo de implementación de lo que queremos hacer.
+						</p>
+			</section>
+			<section>
+				<pre><code>
+function cc_publication_form_views_exposed_form_alter(&$form, &$form_state) {
+
+	if ( $form['#id'] == "views-exposed-form-publication-list-block" ) {
+
+		$node = node_load(arg(1));
+
+		if ( $node->field_pl_expose_order['und'][0]['value'] == 1 ) {
+			$form['sort_order']['#title'] =  'Sort by' ; 
+		} else {
+			$form['sort_order']['#title'] =  '' ; 
+			$form['sort_order']['#type'] =  'hidden' ; 			
+		}
+
+		if ( $node->field_pl_expose_author['und'][0]['value'] == 1 ) {
+			$form['field_pub_author_tid']['#title'] =  t('Author') ; 
+		} else {
+	    $form['field_pub_author_tid']['#type'] =  'hidden'; 
+			$form['field_pub_author_tid']['#title'] =  '';
+			$form['field_pub_author_tid']['#value'] =  array() ;  // Ponemos un array para la seleccion multiple
+
+		}
+
+		$form['sort_by']['#title'] =  '' ; 
+		$form['sort_by']['#type'] =  'hidden' ; 
+
+	}
+
+}
+
+				</code></pre>
+			</section>
+
+		</section>
+
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>05.</span> Agradecimientos</h2>
+		</section>
+
+		<section>
+			<section>
+				<p>Ignacio Sánchez Holgueras</p>
+				<p>Carles Saport</p>
+				<p>José María Carnicero</p>
+				<p>David Bernal</p>
+			</section>
+			<section>
+
+			</section>
+		</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>06.</span> Preguntas</h2>
+		</section>
+
+
+
+
+
+		<section>
+			<h1>END OF LINE</h1>
+			<h3>Muchas gracias</h3>
+					<p>
+						<small><a href="http://carloscarrascal.com">Carlos Carrascal</a> - <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a><br />
+						 	[ <a href="mailto:ccarrascal@indra.es">ccarrascal@indra.es</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ] <br />
+						 	[ <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a> ]
+						</small>
+					</p>
+					<p>
+						<small>Repositorio de GitHub<br/></small>
+						<small><a href="https://github.com/ccarrascal/drupalcamp2014" target="_blank">https://github.com/ccarrascal/drupalcamp2014</a></small>
+					<p>
+					<p>
+							<a  href="http://www.indra.es"><img class="basic" src="images/indra_basic_logo.gif" alt="Indra" /></a></small>
+					</p>
+
+		</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				// theme: 'sky', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+ 

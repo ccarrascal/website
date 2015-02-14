@@ -1,0 +1,48 @@
+{"id":"1",
+"nombre":"Primera instalacion",
+"direccion":"Avenida sin número 1",
+"poblacion":"Legan\u00e9s",
+"provincia":"Madrid",
+"contacto":"Conserje,  carlos . tlf 699999999",
+"existenLlaves": 0,
+"existenLlavesObservaciones":"preguntar en recepción",
+"descripcion":"Ut ante dolor, ullamcorper a venenatis id, aliquam sit amet magna. Quisque vel ante diam, rhoncus consequat orci. Nunc turpis nulla, pellentesque eu imperdiet non, porta quis nulla. Ut suscipit accumsan mauris et porta. Nam mattis volutpat viverra. Curabitur sollicitudin est ligula. Ut mi dolor, mollis pretium posuere quis, lobortis sagittis felis. Sed sollicitudin, sem nec feugiat sollicitudin, ligula urna vulputate orci, vitae mattis tortor odio vitae libero. Donec vel lorem eros, lacinia viverra nulla. Morbi eu bibendum massa. Aliquam aliquam cursus elit, a aliquam lectus imperdiet non. Aenean ut turpis turpis. r",
+"observaciones":"Observaciones de la instalación",
+"listaEquipos": [
+    {
+      "id" : 2,
+      "tipo" : "uno",
+      "descripcion" : "uno",
+      "marca" : "uno",
+      "modelo" : "uno",
+      "añoFabricacion" : "1000",
+      "medidas" : "nada",
+      "referencia" : "1000",
+      "presion" : "25000Kca"
+    },
+    {
+      "id" : 2,
+      "tipo" : "dos",
+      "descripcion" : "dos",
+      "marca" : "dos",
+      "modelo" : "dos",
+      "añoFabricacion" : "2000",
+      "medidas" : "nada",
+      "referencia" : "1000",
+      "presion" : "25000Kca"
+
+    }
+  ],
+"listaFotos" : [
+
+  ], 
+"listaTecnicos": [
+    {
+      "id" : "1",
+      "nombre" : "Daniel",
+      "apellidos" : "Doe",
+      "telefono" : "000 000 000",
+      "email" : "daniel@avisos.com"
+    }
+  ]
+}

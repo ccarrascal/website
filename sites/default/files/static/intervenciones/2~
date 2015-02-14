@@ -1,0 +1,39 @@
+{
+"id":"2",
+"nombre":"Morbi imperdiet nisl libero, at condimentum eros. ",
+"descripcion":"Curabitur ornare tincidunt libero, quis aliquam eros auctor sit amet. Suspendisse sollicitudin, magna ut ornare tristique, lacus nisi venenatis nisi, nec sagittis sapien quam ut nisi. Sed fringilla cursus malesuada. Curabitur faucibus, mauris sit amet bibendum venenatis, odio elit cursus arcu, eu varius lorem libero id turpis. Fusce iaculis convallis ligula, at dignissim mauris pretium at. Nulla at quam elit. ",
+"prioridad" : "Alta",
+"fechaAlta" : "10/10/2010",
+"tipo" : "Mantenimiento", 
+"listaContactos": [
+    {
+      "id" : "1",
+      "nombre" : "Daniel",
+      "apellidos" : "Doe",
+      "telefono" : "000 000 000",
+      "email" : "daniel@avisos.com"
+    }
+  ],
+    "instalacion" :
+      {"id":"1",
+  "nombre":"Av. Baviera 16",
+  "direccion":"Av. Baviera 16",
+  "poblacion":"Madrid",
+  "provincia":"Madrid",
+  "contacto":"Manuel (conserje)",
+  "existenLlaves": true,
+  "existenLlavesObservaciones":"preguntar en recepción",
+  "descripcion":"Ut ante dolor, ullamcorper a venenatis id, aliquam sit amet magna. Quisque vel ante diam, rhoncus consequat orci. Nunc turpis nulla, pellentesque eu imperdiet non, porta quis nulla. Ut suscipit accumsan mauris et porta. Nam mattis volutpat viverra. Curabitur sollicitudin est ligula. Ut mi dolor, mollis pretium posuere quis, lobortis sagittis felis. Sed sollicitudin, sem nec feugiat sollicitudin, ligula urna vulputate orci, vitae mattis tortor odio vitae libero. Donec vel lorem eros, lacinia viverra nulla. Morbi eu bibendum massa. Aliquam aliquam cursus elit, a aliquam lectus imperdiet non. Aenean ut turpis turpis. ",
+  "observaciones":"UN INTERCAMBIADOR ANULADO",
+  "listaEquipos": [
+      {
+  "id" : 1,
+  "tipo" : "caldera",
+  "descripcion" : "",
+  "marca" : "WOLF",
+  "modelo" : "MK1-220",
+  "añoFabricacion" : "",
+  "medidas" : "220Kw",
+  "referencia" : "",
+  "presion" : "4bar"
+      },
