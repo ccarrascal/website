@@ -166,4 +166,13 @@
 </div>
 <footer class="footer container">
   <?php print render($page['footer']); ?>
+  <div class="contaniner">
+    <ul class="logos">
+      <li><a href="http://www.drupal.com" title="Drupal"><img src="/sites/all/themes/bs_css/images/drupal_logo_black.jpg"></a></li>
+      <li><a href="http://www.w3schools.com/html/html5_intro.asp" title="HTML5"><img src="/sites/all/themes/bs_css/images/html5-logo-black.png"></a></li>
+      <li><a href="http://getbootstrap.com/" title="Bootstrap"><img src="/sites/all/themes/bs_css/images/twitter-bootstrap-logo.png"></a></li>
+      <li><a href="http://lesscss.org/" title="{less}"><img src="/sites/all/themes/bs_css/images/less.jpg"></a></li>
+
+    </ul>
+  </div>
 </footer>
