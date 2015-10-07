@@ -7466,6 +7466,9 @@ ul.links li a:hover {
 .region-sidebar-first {
   margin-top: 40px;
 }
+.webform-client-form .form-item {
+  margin: 15px 0;
+}
 footer ul.logos {
   list-style: none;
   margin: 20px 0;
