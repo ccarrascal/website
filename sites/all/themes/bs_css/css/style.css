@@ -263,7 +263,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -5998,7 +5998,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6116,7 +6116,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7348,7 +7348,7 @@ header#navbar {
   box-shadow: 0px 10px 23px 0px rgba(0, 0, 0, 0.34);
   background-color: #000;
   border-color: #bbb;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', Helvetica, cursive;
 }
 header#navbar .container {
   background-color: #000;
@@ -7375,11 +7375,22 @@ header#navbar .container a.active {
   background-color: #000;
 }
 header#navbar .container a:hover {
-  background-color: #222;
-  border-bottom: 10px #222 solid;
+  background-color: #444;
+  border-bottom: 10px #444 solid;
 }
 header#navbar .container a.active:hover {
   border-bottom: 10px blue solid;
+}
+header#navbar .container .navbar-brand {
+  font-size: 1.6em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Coda', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .breadcrumb {
   background-color: #fff !important;
@@ -7448,6 +7459,9 @@ ul.links > li.active > a:focus {
 ul.links li a {
   background-color: #666666;
   color: #fff;
+}
+ul.links li a:hover {
+  color: #000;
 }
 .region-sidebar-first {
   margin-top: 40px;
