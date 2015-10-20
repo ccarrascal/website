@@ -7336,6 +7336,9 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+body.admin-menu .navbar-fixed-top {
+  top: 19px !important;
+}
 @media screen and (min-width: 992px) {
   .navbar-nav.secondary a {
     /*margin: -15px 0 !important;*/
