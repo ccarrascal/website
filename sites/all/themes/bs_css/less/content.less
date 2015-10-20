@@ -2,10 +2,14 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: @font-family-titles;
+
+	a, a:hover {
+		color: @gray-darker;
+	}
 }
 
 .breadcrumb {
-    background-color: #fff !important; //#f5f5f5;
+    background-color: @body-bg !important;
     border-radius: 0px;
 }
 
@@ -21,12 +25,12 @@ ul.links {
 	margin: 20px 0px;
 
 	li a {
-		background-color: @brand-primary;
+		background-color: @gray-dark;
 		color: #fff;
 	}
 
 	li a:hover {
-		color: #000;
+		background-color: @gray;
 	}
 }
 

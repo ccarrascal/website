@@ -7336,6 +7336,9 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+/**
+ * Header styles
+ */
 body.admin-menu .navbar-fixed-top {
   top: 19px !important;
 }
@@ -7356,10 +7359,6 @@ header#navbar {
 header#navbar .container {
   background-color: #000;
   color: #fff;
-  /*-webkit-box-shadow: 0px 0px 33px 24px rgba(0,0,0,1);*/
-  /*-moz-box-shadow: 0px 0px 33px 24px rgba(0,0,0,1);*/
-  /*box-shadow: 0px 0px 33px 24px rgba(0,0,0,1);*/
-  /*box-shadow: 24px 0 15px 2px rgba(31, 73, 125, 0.8), -24px 0 8px 2px rgba(31, 73, 125, 0.8);*/
   /*		@media @normal {
 			width: 90%;
 			margin: auto;
@@ -7395,8 +7394,22 @@ h5,
 h6 {
   font-family: 'Coda', cursive, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #222222;
+}
 .breadcrumb {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
   border-radius: 0px;
 }
 p {
@@ -7463,11 +7476,11 @@ ul.links > li.active > a:focus {
   background-color: #666666;
 }
 ul.links li a {
-  background-color: #666666;
+  background-color: #333333;
   color: #fff;
 }
 ul.links li a:hover {
-  color: #000;
+  background-color: #555555;
 }
 .region-sidebar-first {
   margin-top: 40px;
