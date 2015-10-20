@@ -7396,6 +7396,9 @@ h6 {
   background-color: #fff !important;
   border-radius: 0px;
 }
+p {
+  margin: 22px 0;
+}
 ul.links {
   margin-bottom: 0;
   padding-left: 0;
@@ -7466,6 +7469,12 @@ ul.links li a:hover {
 .region-sidebar-first {
   margin-top: 40px;
 }
+.field-name-field-category {
+  margin-top: 12px;
+}
+/**
+* Formulario de contacto
+*/
 .webform-client-form .form-item {
   margin: 15px 0;
 }
