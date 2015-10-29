@@ -34,19 +34,16 @@ header#navbar {
 			padding-bottom: 8px;
 			border-bottom: 10px @brand-primary solid;
 			font-weight: bold;
-		}
 
-		a.active {
-			border-bottom: 10px @brand-success solid;
-			background-color: @brand-primary;
-		}
+			&.active, &.active-trail {
+				border-bottom: 10px @brand-success solid;
+				background-color: @brand-primary;
+			}
 
-		a:hover {
-			background-color: @brand-success;
-			border-bottom: 10px @brand-success solid;
-		}
-		a.active:hover {
-			border-bottom: 10px @brand-success solid;
+			&:hover {
+				background-color: @brand-success;
+				border-bottom: 10px @brand-success solid;
+			}
 		}
 
 		.navbar-brand {
