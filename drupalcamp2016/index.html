@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Dynamic Portal Construction: User configurable listings</title>
+
+		<meta name="description" content="Dynamic Portal Construction">
+		<meta name="author" content="Carlos Carrascal">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- <section class="22cool"  data-background="images/logo_drupalcamp.png"> -->
+				<section class="22cool">
+					<h1>Drupalcamp 2016</h1>
+					<!-- <img class="basic" src="images/logo_drupalcamp.png" /> -->
+					<h2>Dynamic Portal Construction</h2>
+					<h5>User configurable listings</h5>
+					<p>
+						<small><a href="http://carloscarrascal.com">Carlos Carrascal</a> - <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a><br />
+						 	[ <a href="mailto:ccarras6@its.jnj.com">ccarras6@its.jnj.com</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ]
+						 	
+						</small>
+					</p>
+					<p>
+							<a href="http://www.jnj.com">
+								<img class="basic" style="width: 40%" src="images/jnj_logo_600px.png" alt="johnson &amp; johnson" />
+								<img class="basic" style="width: 20%" src="images/EDC_logo.png" alt="EMEA Development Center" />
+							</a>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h4>Contents</h4>
+						<ol start="00">
+							<li>Introduction 
+							<li>Automated lists
+							<li>Filtered lists
+							<li>Exposed filters for users
+							<li>Configurable exposed filters
+							<li>Thanks
+							<li>Questions?
+							<li>End of line</li>
+						</ol>
+					</section>
+
+
+				</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+						<h2><span>00.</span> Introduction</h2>
+						<ul class="clean">
+							<li>00.1 Who am I</li>
+						<!--	<li>00.2 The most important thing</li> -->
+							<li>00.2 What are we going to do</li>
+							<li>00.3 Why?</li>
+							<li>00.4 One last thing</li>
+						</ul>
+		</section>
+				
+				<section>
+					<section>
+					<h3><span>00.1</span>Who am I</h3>
+					<p>
+						Carlos Carrascal Sánchez<br />
+						<a href="https://twitter.com/ccarrascal77">@ccarrascal77</a> <br />
+						<small>
+						 	[ <a href="mailto:ccarras6@its.jnj.com">ccarras6@its.jnj.com</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ] <br />
+						 	[ <a href="http://www.carloscarrascal.com" target="_blank">http://www.carloscarrascal.com</a> ]
+						</small>
+					</p>
+					<p>
+						Web developer
+					<p>
+  				</section>
+  				<section>
+  					<p>I have been working in IT since 1998, in different companies:</p>
+  					<ul class="centered">
+  						<li>Coritel / Accenture</li>
+  						<li>qarana solutions</li>
+  						<li>Azertia</li>
+  						<li>Indra</li>
+  					</ul>
+  				</section>
+  				<section>
+  					<p>Mostly in Spain</p>
+						<img class="basic" style="width: 80%" src="images/spain_is_cool.jpg" alt="Spain is cool" />
+
+  				</section>
+  				<section>
+  					<p>Usually doing web development or CMS related, mostly with Open Source tools and GNU / Linux</p>
+  				</section>
+				</section>
+
+<!-- 
+				<section data-transition="zoom" data-background-transition="zoom">
+					<section>
+						<h3><span>00.2</span> The most important thing</h3>
+						<p>&nbsp;</p>
+						<p>
+						<q><strong>Focus your development on customers needs and product operation.</strong> </q>
+						</p>
+					</section>
+					<section>
+						<p>But ... </p>
+						<p><strong>Each project is a world in itself.</strong> </p>
+						<p>We will have different requirements, budget, phases, deadlines, etc.</p>
+						<p>We must be able to adapt, and there will be occasions where we would not be able to thing as we like.</p>
+					</section>
+					
+					<section>
+						<p>
+							If we want our work to be successful, first of all our products must be usable.</p>
+						</p>
+					</section>
+
+					<section>
+
+						<p>The idea behind this talk is trying to develop a solution that suits our clients needs, and its flexible enough
+							to be easily extended or improved in the future, or adapted for any requirements change minimizing our effort.
+						</p>
+					</section>
+
+					<section>
+
+					  <p>
+					  	Doing this, we assure that our products will be used, exceeding our clients expectations,
+					  	and thus increase our revenue or our company.
+						</p>
+						<p>Always within reason. And inside our budget.</p>
+					</section>
+
+ 					<section>
+						<p>Porque si el cliente no está contento, o surgen demasiadas incidencias después de la entrega...</p>
+						<ul>
+							<li>Habremos invertido demasiado tiempo en solucionar indicencias y perderemos rentabilidad</li>
+							<li>Habremos perdido el cliente y no volverá a trabajar con nosotros</li>
+						</ul>
+
+					</section>
+ 
+
+				</section>
+ -->
+				<section data-transition="zoom" data-background-transition="zoom">
+					<section>
+						<h3><span>00.2</span> What are we going to do</h3>
+					
+						<p>We will develop a system that will allow our content editors, <strong>without any technical knowledge</strong>,
+							to be able to create pages with lists in a simple and intuitive way, and with some degree of customization.
+						</p>
+					</section>
+
+					<section>
+						<p>And more specifically: </p>
+						<p>We will use nodes that will display views showing other nodes, 
+							apply filters by content types, taxonomy terms, or any field values in those nodes.
+						</p>
+					</section>
+
+					<section>
+						<h4>How?</h4>
+						<p>Using the following components:</p>
+						<ul>
+							<li>One content type to be listed: Plain and simple nodes (news, articles, etc.)</li>
+							<li>Another content type implementing the list: We will call it "X List" (Article list)</li>
+							<li>View: To display the nodes to be listed.</li>
+							<li>Context: Will relate the "X Listing" with the appropiate View</li> 
+							<li>Feature: Used to glue all components together and have some code in the .module file</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h4>What do we need</h4>
+						<p>A Drupal 7 install with these modules:</p>
+						<ul>
+							<li><strong>Views:</strong> For listing creation.</li>
+							<li><strong>Context:</strong> For node and view association.</li>
+							<li><strong>Features:</strong> For packaging our components.</li>
+							<li><strong>Display Suite:</strong> Is not mandatory, but highly recommended.</li>
+						</ul>
+
+					</section>
+
+				</section>
+
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+						<h3><span>00.3</span> Why? </h3>
+					<p>
+						Some advantanges are: 
+	  			</p>
+	  			<ul>
+	  				<li>
+	  					<strong>Managing content in the list pages:</strong> Our listings will be nodes, so we can use them the
+	  					same way as any other content in our site, adding text, blocks, contexts, panels, etc.
+	  				</li>
+	  				<li><strong>Multilanguage:</strong> We can translate the content, the URL, fields, metatags, etc.
+	  					We can also control if they will appear at all in a given language or not.
+	  				</li>
+  				</ul>
+				</section>
+				<section>
+	  			<ul>
+	  				<li>
+	  					<strong>Simplify content management to the editors:</strong> 
+	  					It is easier for non-technical users manage listings in the way as any other page. We will also avoid 
+	  					lots of troubles by keeping those users away from view configuration.
+	  				</li>
+	  				<li>
+	  					<strong>Reduce number of views:</strong> For most projects this method will require to develop less views, 
+	  					so our project will be easier to support.
+	  				</li>
+	  				<li>
+	  					<strong>Increase quality:</strong> Or at least the perceived quality, by having sort options and filters
+	  					by default in most listings.
+	  				</li>
+  				</ul>
+				</section>
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+					<h3><span>00.4</span> One last thing </h3>
+					<p>
+						There is a contributed module to do almost the same thing that we are going to 
+						do by hand.
+	  			</p>
+	  			<p>
+	  				<a href="http://drupal.org/project/custom_listing_pages" target="_blank" title="custom_listing_pages">custom_listing_pages</a> 
+	  			</p>
+				</section>
+				<section>
+					<p>
+						I would recommend to try it for something simple and easy, but for a bigger project, doing it 
+						ourselves will provide more customization.
+	  			</p>
+				</section>
+
+		</section>
+
+<!-- 		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+					<h4>Can't wait, let's do this... </h4>
+					<img src="images/countdown-3.gif" class="basic" />
+				</section>
+		</section>
+ -->
+		<section data-transition="zoom" data-background-transition="zoom">
+				<section>
+					<h4>Ok, ok ... </h4>
+					<img src="images/Shut-up-and-take-my-money.jpg" class="basic" />
+				</section>
+		</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+						<h2><span>01.</span> Automated listings</h2>
+						<ul class="clean">
+							<li>01.1 Nodes and views</li>
+							<li>01.2 Listed elements content type</li>
+							<li>01.3 Listing content type</li>
+							<li>01.4 The view</li>
+							<li>01.5 The context</li>
+							<li>01.6 Example</li>
+						</ul>
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.1</span> Nodes and views</h3>
+					<p>
+						Drupal has two basic functionalities for displaying content:
+					</p>
+					<ul>
+						<li><i>Content Construction Kit (CCK)</i> used to manage content types, included in Drupal 7 core</li>
+						<li><i>Views</i> used to manage listings, included in Drupal 8 core, availiable as a module for Drupal 7</li>
+					</ul>
+			</section>
+
+			<section>
+				<p>
+					Traditionally, content display is handled and developed separately from the content lists.
+				</p>
+			</section>
+
+			<section>
+				<p>Views configuration usually is far too complex for any user without technical knowledge.</p>
+			</section>
+
+			<section>
+				<p>
+					We are trying to ease content management, allowing the editors to create listings by creating a 
+					special type of node, that will include a relevant list automatically.
+				</p>
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.2</span> Listed elements content type</h3>
+					<p>
+						First thing to create will be the content type that we want to show in the list.
+					</p>
+					<p>
+						For example we could use 
+						<i>Article</i>, from the default Drupal installation.
+					</p>
+			</section>
+
+			<section>
+					<p>
+						We can add and configure as many fields as we need in this content type.
+					</p>
+					<p>
+						For now, there is no other special feature that we need to consider for this content type.
+					</p>
+
+			</section>
+
+			<section data-background="images/article-content-type.png">
+			</section>
+
+
+			<section>
+				<p>
+					If we are using Display Suite, we will configure at least two modes:
+				</p>
+				<ul>
+				 <li><i>Teaser:</i> For listings.</li>
+				 <li><i>Default:</i> For full page display.</li>
+				</ul>
+			</section>
+
+
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.3</span> Listing content type</h3>
+					<p>
+						This is the content type used to display the list.
+						As we are listing <i>Articles</i>, we could name it <i>Article Listing</i>.
+					</p>
+			</section>
+
+			<section>
+					<p>
+						For now we don't need to add any special field to this content type. We can have a Body
+						field or not, if we want our lists to include some text.
+					</p>
+			</section>
+
+			<section>
+				<p><b>Example:</b> Content type <i>Article Listing</i> with default fields.</p>
+				<a href="images/article-content-display.png"><img src="images/article-content-display.png" title="Tipo de contenido Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>
+					If we are using Display Suite, we will only need to enable Defautl or Full content modes, for the full node view.
+				</p>
+				<p>
+					It may be interesting to disable the option "Show in home page".
+				</p>
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.4</span> The view</h3>
+					<p>
+						Now we will create the view to display the actual list. In our example, it will list nodes of <i>Article</i> type.
+					</p>
+			</section>
+
+			<section>
+					<ul>
+						<li>Set the <i>content</i> type to display to <i>Article</i>.</li>
+						<li>Sort by creation date (or whatever)</li>
+						<li>Create a <i>Block</i> view. It won't be necessary to create a <i>Page</i> view type.</li>
+						<li>If we are using <i>Display Suite</i>, select <i>Teaser</i> mode to display the nodes.</li>
+						<li>We could configure any other options needed, as a pager.</li>
+					</ul>
+			</section>
+
+			<section>
+				<p>Block view for Article content type.</p>
+				<a href="images/article-view-block.png"><img src="images/article-view-block.png" title="Article list view" /></a>
+			</section>
+		</section>
+
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+					<h3><span>01.5</span> The context</h3>
+					<p>
+						At last, we will use a Context to tie together the view and the <i>Article listing</i> node.
+					</p>
+			</section>
+
+			<section>
+					<ul>
+						<li>
+							Select <i>Content Type</i> as condition, and set <i>Article listing</i>.
+						</li>
+						<li>
+							Remember to unset the <i>Set on node form</i> option, to keep it from activate on node edit.
+						</li>
+						<li>
+							Activate <i>Blocks</i> reaction in the context.
+						</li>
+						<li>
+							Add the view block, for the view that we have created in the last step, in the desired region.
+						</li>
+					</ul>
+			</section>
+
+			<section>
+				<p>
+					Context conditions to associate the view with the content type <i>Article listing</i>.
+				</p>
+				<a href="images/article-context-conditions.png"><img src="images/article-context-conditions.png" title="Contexto Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>
+					Context reactions for displaying the view into the <i>Article listing</i> content type.
+				</p>
+				<a href="images/article-context-blocks.png"><img src="images/article-context-blocks.png" title="Contexto Listado de artículos" /></a>
+			</section>
+
+			<section>
+				<p>
+					Now, whenever an <i>Article listing</i> node is displayed, our new context will include the view in the desired region of our theme as a block. If we have a <i>Content bottom</i> region, for example, we can have the list below the node content.
+				</p>
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background-transition="zoom">
+			<section>
+				<h3><span>01.6</span> Example</h3>
+				<p>
+					List of nodes of <i>Article</i> type
+	 			</p>
+				<a href="images/Article_list_drupalcamp2016.png"><img src="images/Article_list_drupalcamp2016.png" title="Article list" /></a>
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>02.</span> Filtered lists</h2>
+				<ul class="clean">
+					<li>02.1 Taxonomy</li>
+					<li>02.2 Contents: Term reference</li>
+					<li>02.3 List: Term reference</li>
+					<li>02.4 View: Contextual filter</li>
+					<li>02.5 Examples</li>
+				</ul>
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.1</span> Taxonomy</h3>
+						<p>
+							To be able to create a filter for our list, we are going to create a taxonomy filter.
+						</p>
+						<p>
+							We will include term references in both the contents that we want to list and the listing nodes.
+						</p>
+						<p>
+							We will use the default <i>Tags</i> taxonomy.
+						</p>
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>02.2</span> Contents: Term reference</h3>
+						<p>
+							Include a <i>Term reference</i> field in the <i>Article</i> content type, so we can filter them using the view.
+						</p>
+						<p>
+							We can configure the field with single or multiple values, autocomplete, check boxes, etc.
+						</p>
+			</section>
+			<section>
+				<p>
+					There is no mistery in adding a field to a content type.
+	 			</p>
+				<a href="images/article-content-type-tags.png"><img src="images/article-content-type-tags.png" title="Un campo nuevo" /></a>
+			</section>
+			<section data-background="images/article-content-type-tags.png">
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.3</span>List: Term reference</h3>
+						<p>
+							We will also include a <i>Term reference</i> field in the <i>Article listing</i> content type, to use it as filter criteria.
+						</p>
+						<p>
+							Again, we can configure the field with single or multiple values, autocomplete, check boxes, or whatever.
+						</p>
+			</section>
+			<section>
+				<p>
+					No mistery here either, we have already seen this.
+	 			</p>
+				<a href="images/article-list-content-type-tags.png"><img src="images/article-list-content-type-tags.png" title="Otro campo nuevo" /></a>
+			</section>
+			<section data-background="images/article-list-content-type-tags.png">
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>02.4</span>View: Contextual filter</h3>
+						<p>
+							Add a <i>Contextual filter</i> of type <i>Content: Has taxonomy term ID</i> to the view.
+						</p>
+						<p>
+							This filter will only match when the article node has the same term that is set in the listing node.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter.png">
+			</section>
+			<section data-background="images/article-view-contextual-filter-1.png">
+			</section>
+
+			<section>
+						<p>
+							These filters are usually passed to the view as a parameter in the URL, when the view is set as a page.
+						</p>
+						<p>
+							In this case, the trick is to specify a default value to be selected when the parameter is missing.
+						</p>
+			</section>
+
+			<section>
+						<p>
+							Using the option <i>Taxonomy term ID from URL</i>, we can set it to <i>Load default filter from node page</i>.
+							By doing this, we are indicating the filter to look for the value in the node that is being displayed, that is, 
+							the value in the <i>Tags</i> field of the Article listing node.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-2.png">
+			</section>
+
+
+			<section>
+						<p>
+							This filter can be limited to a specific vocabulary, selecting one or more of them.
+						</p>
+						<p>
+							Another interesting option that will affect the results to display is using AND or OR as a condition 
+							when we have multiple terms to filter by.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-3.png">
+			</section>
+
+			<section>
+						<p>
+							At last, we can configure a value as an exception to skip the filter. When the view recieves this
+							value, it will stop to apply the contextual filter, forcing it to display all results.
+						</p>
+						<p>
+							For taxonomy terms, we will need to use the term ID.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-contextual-filter-4.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>02.5</span>Example</h3>
+						<p>
+							The following screen is an article list obtained by filtering with a taxonomy term.
+						</p>
+
+			</section>
+
+			<section data-background="images/listado-articulos-filtrado-term.png">
+			</section>
+
+		</section>
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>03.</span> Exposed filters for users</h2>
+				<ul class="clean">
+					<li>03.1 View: set exposed filters</li>
+					<li>03.2 View: set exposed sort order</li>
+					<li>03.3 Examples</li>
+				</ul>
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.1</span> View: set exposed filters</h3>
+						<p>
+							We can also expose the filters we created to the final user, and they will be applied together with
+							the contextual filter settings.
+						</p>
+			</section>
+			<section>
+						<p>
+							As we are displaying the view as a block, to work properly we need to enable <i>AJAX</i> option in the
+							<i>Advanced / Others</i> section.
+						</p>
+			</section>
+			<section>
+				<p>
+					Set a filter in the usual way in the view, using the desired type: dates, field value, text, etc.
+	 			</p>
+			</section>
+			<section data-background="images/article-view-exposed-filter-1.png">
+			</section>
+			<section>
+				<p>
+					Expose the filter to the user. We can use <i>Single</i>, <i>Grouped</i>, or any combination we need.
+	 			</p>
+			</section>
+			<section data-background="images/article-view-exposed-filter-2.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.2</span> View: set exposed sort order</h3>
+						<p>
+							We can also expose sort order criteria in the usual way, and let the user modify them.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-exposed-order-1.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>03.3</span> Example</h3>
+						<p>
+							In this list we can see the exposed form that includes the filters and sort order
+							to the user.
+						</p>
+			</section>
+
+			<section data-background="images/article-view-exposed-1.png">
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>04.</span> Configurable exposed filters</h2>
+				<ul class="clean">
+					<li>04.1 The idea</li>
+					<li>04.2 The Feature</li>
+					<li>04.3 Modify exposed filters using code</li>
+					<li>04.4 Examples</li>
+				</ul>
+		</section>
+
+
+		<section>
+			<section>
+						<h3><span>04.1</span> The idea</h3>
+						<p>
+							Now that we have exposed filters in our listings, we can add some logic to it.
+						</p>
+			</section>
+			<section>
+						<p>
+							One interesting possibility is let the content manager choose which filters or sort criteria
+							will be exposed to the user.
+						</p>
+			</section>
+			<section>
+						<p>
+							For this we will need to add some more fields to our <i>Article listing</i> content type, and use them
+							to control how the filters works.
+						</p>
+						<p>
+							We will use a <i>Boolean</i>  field for each of the filters that we want to be able to activate.
+						</p>
+			</section>
+
+			<section data-background="images/article-list-exposed-fields.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>04.2</span> The Feature</h3>
+						<p>							
+							We should be already using <i>Features</i> module, but here we will use it to: 
+						</p>
+						<ul>
+							<li>Pack together all our components: content types, view and context.</li>
+							<li>Use the <i>.module</i> file in the Feature to include some code to control the filter.</li>
+						</ul>
+			</section>
+
+			<section>
+						<p>
+							This is an example of all the components included into our newly created Feature.
+						</p>
+			</section>
+
+			<section data-background="images/article-listing-feature.png">
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+						<h3><span>04.3</span> Modify exposed filters using code</h3>
+						<p>
+							We will use a <i>hook</i> to alter the exposed filters form and hide the ones that we don't want to
+							be shown, as selected in the listing node.
+						</p>
+			</section>
+			<section>
+						<p>
+							We can implement <i>hook_form_FORM_ID_alter</i>. 
+						</p>
+						<p>
+							In our code we will need to access the current
+							node, and the simple way of doing this is using the <i>node_load</i> function.
+						</p>
+			</section>
+			<section>
+						<p>
+							Lets see an example implementation of this.
+						</p>
+			</section>
+			<section>
+				<pre><code>
+function cc_publication_form_views_exposed_form_alter(&$form, &$form_state) {
+
+	if ( $form['#id'] == "views-exposed-form-publication-list-block" ) {
+
+		$node = node_load(arg(1));
+
+		if ( $node->field_pl_expose_order['und'][0]['value'] == 1 ) {
+			$form['sort_order']['#title'] =  'Sort by' ; 
+		} else {
+			$form['sort_order']['#title'] =  '' ; 
+			$form['sort_order']['#type'] =  'hidden' ; 			
+		}
+
+		if ( $node->field_pl_expose_author['und'][0]['value'] == 1 ) {
+			$form['field_pub_author_tid']['#title'] =  t('Author') ; 
+		} else {
+	    $form['field_pub_author_tid']['#type'] =  'hidden'; 
+			$form['field_pub_author_tid']['#title'] =  '';
+			$form['field_pub_author_tid']['#value'] =  array() ;  // Use and array for multiple selection
+
+		}
+
+		$form['sort_by']['#title'] =  '' ; 
+		$form['sort_by']['#type'] =  'hidden' ; 
+
+	}
+
+}
+
+				</code></pre>
+			</section>
+
+		</section>
+
+
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>05.</span> Thanks</h2>
+		</section>
+
+		<section>
+			<section>
+				<p>Ignacio Sánchez Holgueras</p>
+				<p>Carles Saport</p>
+				<p>José María Carnicero</p>
+				<p>David Bernal</p>
+			</section>
+
+		</section>
+
+		<section data-transition="zoom" data-background="#99aaaa" data-background-transition="slide">
+				<h2><span>06.</span> Questions?</h2>
+		</section>
+
+
+
+
+
+		<section>
+			<h1>END OF LINE</h1>
+			<h3>Muchas gracias</h3>
+					<p>
+						<small><a href="http://carloscarrascal.com">Carlos Carrascal</a> - <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a><br />
+						 	[ <a href="mailto:ccarras6@its.jnj.com">ccarras6@its.jnj.com</a> ]
+						 	[ <a href="mailto:carlos.carrascal@gmail.com">carlos.carrascal@gmail.com</a> ] <br />
+						 	[ <a href="https://twitter.com/ccarrascal77">@ccarrascal77</a> ]
+						</small>
+					</p>
+					<p>
+						<small>GitHub Repository<br/></small>
+						<small><a href="https://github.com/ccarrascal/drupalcamp2014" target="_blank">https://github.com/ccarrascal/drupalcamp2014</a></small>
+					<p>
+					<p>
+							<a href="http://www.jnj.com">
+								<img class="basic" style="width: 40%" src="images/jnj_logo_600px.png" alt="johnson &amp; johnson" />
+								<img class="basic" style="width: 20%" src="images/EDC_logo.png" alt="EMEA Development Center" />
+							</a>
+					</p>
+
+		</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				// theme: 'sky', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+ 
